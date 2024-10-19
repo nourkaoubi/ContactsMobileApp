@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvUpdateContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Update Contact"
+        android:textColor="@color/primaryColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            android:contentDescription="Contact Name Icon"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/primaryColor" />
+
+        <EditText
+            android:id="@+id/edContactName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            android:paddingStart="16dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:contentDescription="Contact Phone Icon"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/primaryColor" />
+
+        <EditText
+            android:id="@+id/edContactPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            android:paddingStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/st_button_cancel"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#F44336"
+            android:text="Delete"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/st_button_ok"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Update"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

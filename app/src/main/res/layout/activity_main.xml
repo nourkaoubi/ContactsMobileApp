@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSignin"
+        style="@style/st_title"
+        android:text="Se connecter" />
+
+    <EditText
+        android:id="@+id/ednom_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Saisir votre nom.."
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edmdp_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="*********"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnval_auth"
+        style="@style/st_button_ok"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="Valider"
+        android:translationX="0dp"
+        app:strokeColor="#673AB7"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tvSignupRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:text="Pas de compte ? Inscrivez-vous"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+</LinearLayout>
