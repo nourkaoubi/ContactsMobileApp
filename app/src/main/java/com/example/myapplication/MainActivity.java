@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
                     if (checkUserCredentials(name, password)) {
                         int userId = getUserIdFromPreferences();
 
-                       // databaseHelper.insertContact("salsla", "26554477", userId);
+
                         Intent intent = new Intent(MainActivity.this, Accueil.class);
                         intent.putExtra("userId", userId);
-                        //intent.putExtra("name", name);
+
                         startActivity(intent);
 
-                        Toast.makeText(MainActivity.this, "Bienvenue " + name + userId, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Bienvenue " + name, Toast.LENGTH_SHORT).show();
                     } else {
 
                         Toast.makeText(MainActivity.this, "Nom d'utilisateur ou mot de passe incorrect", Toast.LENGTH_SHORT).show();

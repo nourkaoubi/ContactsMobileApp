@@ -98,7 +98,7 @@ public class Accueil extends AppCompatActivity {
                 }
             } while (cursor.moveToNext());
         }
-        else { Toast.makeText(this, "No contacts found for this user Im cryingggg!!!!!!!", Toast.LENGTH_SHORT).show();}
+       // else { Toast.makeText(this, "No contacts found for this user !", Toast.LENGTH_SHORT).show();}
 
         cursor.close();
         db.close();
